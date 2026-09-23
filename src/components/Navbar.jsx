@@ -13,7 +13,7 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => setRolou(window.scrollY > 50)
     window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll) // limpeza
+    return () => window.removeEventListener('scroll', onScroll) 
   }, [])
 
   return (

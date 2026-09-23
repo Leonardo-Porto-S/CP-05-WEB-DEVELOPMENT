@@ -8,7 +8,7 @@ export default function Pratos() {
   const [carregando, setCarregando] = useState(true)
   const [erro, setErro] = useState(null)
 
-  // Roda quando o componente aparece e sempre que "categoria" mudar
+
   useEffect(() => {
     let cancelado = false
 
@@ -20,7 +20,7 @@ export default function Pratos() {
           `https://www.themealdb.com/api/json/v1/1/filter.php?c=${categoria}`
         )
         if (!resposta.ok) throw new Error('Falha na requisição')
-        const dados = await resposta.json() // texto JSON -> objeto JS
+        const dados = await resposta.json() 
         if (!cancelado) setPratos((dados.meals || []).slice(0, 8))
       } catch (e) {
         if (!cancelado) setErro('Não foi possível carregar os pratos.')
