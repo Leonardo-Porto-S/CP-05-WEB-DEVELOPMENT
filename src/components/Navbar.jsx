@@ -24,7 +24,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
         <a href="#inicio" className="text-2xl font-bold text-orange-400">
-          🍽️ GourmetOn
+          🍽️ MelhorEscolha
         </a>
         <ul className="hidden md:flex gap-6 text-white">
           {links.map((l) => (
