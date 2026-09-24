@@ -29,7 +29,7 @@ function Hero() {
           Comida deliciosa, <span className="text-orange-400">na sua porta</span>
         </h1>
         <p className="text-lg mb-8">
-          MelhorEscolha conecta você aos melhores restaurantes da cidade com entrega rápida e segura.
+          GourmetOn conecta você aos melhores restaurantes da cidade com entrega rápida e segura.
         </p>
         <a href="#contato" className="inline-block bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-semibold transition">
           Baixar o app
@@ -42,7 +42,7 @@ function Hero() {
 function Sobre() {
   return (
     <section id="sobre" className="py-20 px-4 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-12">Por que o MelhorEscolha?</h2>
+      <h2 className="text-3xl font-bold text-center mb-12">Por que o GourmetOn?</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {beneficios.map((b) => (
           <div key={b.titulo} className="text-center p-6 rounded-xl bg-orange-50">
@@ -122,14 +122,14 @@ function Contato() {
 function Rodape() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10 px-4 text-center">
-      <p className="text-xl font-bold text-orange-400 mb-2">🍽️ MelhorEscolha</p>
-      <p>contato@MelhorEscolha.com • (11) 99999-9999</p>
+      <p className="text-xl font-bold text-orange-400 mb-2">🍽️ GourmetOn</p>
+      <p>contato@GourmetOn.com • (11) 99999-9999</p>
       <p className="my-3 space-x-4">
         <a href="#" className="hover:text-orange-400">Instagram</a>
         <a href="#" className="hover:text-orange-400">Twitter</a>
         <a href="#" className="hover:text-orange-400">Termos de uso</a>
       </p>
-      <p className="text-sm text-gray-500">© 2026 MelhorEscolha. Projeto acadêmico FIAP.</p>
+      <p className="text-sm text-gray-500">© 2026 Gourmeton. Projeto acadêmico FIAP.</p>
     </footer>
   )
 }
